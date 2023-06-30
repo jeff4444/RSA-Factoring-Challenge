@@ -1,4 +1,5 @@
 #!/bin/python3
+import time
 import math
 import sys
 def find_factor(num):
@@ -26,8 +27,15 @@ def print_fact(num):
         print(f'{num}={fact2}*{fact}')
 
 def main():
+    start_time = time.time()
     file_path = sys.argv[1]
     with open(file_path, "r") as file:
         for line in file:
             print_fact(int(line))
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+
+    # Print the elapsed time
+    print("Elapsed time:", elapsed_time, "seconds")
+
 main()

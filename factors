@@ -1,2 +1,2 @@
 #!/bin/bash
-./factorise.py $1
+./fact $1
