@@ -1,2 +1,2 @@
 #!/bin/bash
-./fact $1
+./jeff $1
